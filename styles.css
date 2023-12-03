@@ -192,12 +192,55 @@ body {
   border-right-color: var(--card-text-decoration-color-secondary);
 }
 
+.card__text-wrapper {
+  display: flex;
+  margin-bottom: 1rem;
+  border-style: solid;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  background-color: var(--card-text-decoration-color-primary);
+  border-color: var(--card-text-decoration-color-primary);
+}
+
+.card__text {
+  position: relative;
+  font-family: "Orbitron", sans-serif;
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+  background-color: var(--card-text-background-color);
+  color: var(--card-text-color);
+}
+
+.card__text-wrapper--left {
+  justify-content: flex-start;
+
+  .card__text {
+    text-align: right;
+    padding-right: 2.4rem;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 1.75rem) 100%, 0% 100%);
+    margin-left: -1px;
+  }
+}
+
+.card__text-wrapper--right {
+  justify-content: flex-end;
+
+  .card__text {
+    text-align: left;
+    padding-left: 2.4rem;
+    clip-path: polygon(1.75rem 0, 100% 0, 100% 100%, 0 100%);
+    margin-right: -1px;
+  }
+}
+
 .card--light-side {
   --card-backround-color: var(--yoda-light-brown);
   --card-saber-color: var(--yoda-saber-green);
   --card-text-shadow-color: var(--yoda-saber-green);
   --card-text-decoration-color-primary: var(--yoda-green);
   --card-text-decoration-color-secondary: var(--yoda-light-green);
+  --card-text-background-color: var(--yoda-beige);
+  --card-text-color: var(--yoda-dark-brown);
 }
 
 .card--dark-side {
@@ -206,4 +249,6 @@ body {
   --card-text-shadow-color: var(--vader-saber-red);
   --card-text-decoration-color-primary: var(--vader-dark-red);
   --card-text-decoration-color-secondary: var(--vader-red);
+  --card-text-background-color: var(--vader-dark-grey);
+  --card-text-color: var(--vader-light-grey);
 }
