@@ -79,3 +79,11 @@ h6 {
   --yoda-light-brown: #a98467;
   --yoda-dark-brown: #6c584c;
 }
+
+body {
+  background-image: url(./images/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Orbitron", sans-serif;
+}
