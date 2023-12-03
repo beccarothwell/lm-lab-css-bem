@@ -110,3 +110,34 @@ body {
     margin: 0 auto;
   }
 }
+
+.card {
+  background-color: var(--card-backround-color);
+  box-shadow: 1px 0 5px 1px #fff, -1px 0 5px 1px #fff, 0 -1px 5px 1px #fff,
+    0 1px 5px 1px #fff, 5px 0 10px 5px var(--card-saber-color),
+    -5px 0 10px 5px var(--card-saber-color),
+    0 -5px 10px 5px var(--card-saber-color),
+    0 5px 10px 5px var(--card-saber-color);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  min-width: 352px;
+  flex: 1;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 352px;
+  }
+}
+
+.card--light-side {
+  --card-backround-color: var(--yoda-light-brown);
+  --card-saber-color: var(--yoda-saber-green);
+}
+
+.card--dark-side {
+  --card-backround-color: var(--vader-black);
+  --card-saber-color: var(--vader-saber-red);
+}
