@@ -62,3 +62,20 @@ h6 {
   font-display: swap;
   font-weight: 400 900;
 }
+
+:root {
+  --star-wars-yellow: #ffe81f;
+  --vader-saber-red: #cc0000;
+  --vader-black: #000000;
+  --vader-dark-grey: #242424;
+  --vader-light-grey: #dfdfdf;
+  --vader-navy: #2d2b3c;
+  --vader-dark-red: #670000;
+  --vader-red: #a50000;
+  --yoda-saber-green: #66cc33;
+  --yoda-light-green: #dde5b4;
+  --yoda-green: #adc178;
+  --yoda-beige: #f0ead2;
+  --yoda-light-brown: #a98467;
+  --yoda-dark-brown: #6c584c;
+}
