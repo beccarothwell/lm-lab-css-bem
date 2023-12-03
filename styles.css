@@ -87,3 +87,12 @@ body {
   background-position: center;
   font-family: "Orbitron", sans-serif;
 }
+
+.page-title {
+  font-weight: 900;
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--star-wars-yellow);
+  margin: 1rem;
+}
