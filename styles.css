@@ -78,6 +78,16 @@ h6 {
   --yoda-beige: #f0ead2;
   --yoda-light-brown: #a98467;
   --yoda-dark-brown: #6c584c;
+  --skywalker-saber-blue: #1e90ff;
+  --skywalker-yellow: #fff68f;
+  --skywalker-brown: #cd9b1d;
+  --skywalker-peach: #ffd39b;
+  --skywalker-peach: #e9cca4;
+  --skywalker-light-blue: #8eafd8;
+  --skywalker-light-grey: #f0ece1;
+  --skywalker-purple: #9995b6;
+  --skywalker-orange: #e5703d;
+  --windu-saber-purple: #871efe;
 }
 
 body {
@@ -104,7 +114,16 @@ body {
   justify-content: center;
 }
 
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--card-backround-color);
   box-shadow: 1px 0 5px 1px #fff, -1px 0 5px 1px #fff, 0 -1px 5px 1px #fff,
     0 1px 5px 1px #fff, 5px 0 10px 5px var(--card-saber-color),
@@ -162,7 +181,8 @@ body {
 }
 
 .card__img-wrapper {
-  margin: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .card__img {
@@ -226,7 +246,15 @@ body {
   }
 }
 
-.card--light-side {
+.card_button {
+  text-transform: uppercase;
+  font-weight: 500;
+  align-self: center;
+  background-color: var(--card-saber-color);
+  margin-bottom: 1rem;
+}
+
+.card--yoda {
   --card-backround-color: var(--yoda-light-brown);
   --card-saber-color: var(--yoda-saber-green);
   --card-text-shadow-color: var(--yoda-saber-green);
@@ -236,9 +264,29 @@ body {
   --card-text-color: var(--yoda-dark-brown);
 }
 
-.card--dark-side {
+.card--vader {
   --card-backround-color: var(--vader-black);
   --card-saber-color: var(--vader-saber-red);
+  --card-text-shadow-color: var(--vader-saber-red);
+  --card-text-decoration-color-primary: var(--vader-dark-red);
+  --card-text-decoration-color-secondary: var(--vader-red);
+  --card-text-background-color: var(--vader-dark-grey);
+  --card-text-color: var(--vader-light-grey);
+}
+
+.card--skywalker {
+  --card-backround-color: var(--skywalker-yellow);
+  --card-saber-color: var(--skywalker-saber-blue);
+  --card-text-shadow-color: var(--skywalker-saber-blue);
+  --card-text-decoration-color-primary: var(--skywalker-orange);
+  --card-text-decoration-color-secondary: var(--skywalker-peach);
+  --card-text-background-color: var(--skywalker-light-grey);
+  --card-text-color: var(--skywalker-brown);
+}
+
+.card--windu {
+  --card-backround-color: var(--vader-black);
+  --card-saber-color: var(--windu-saber-purple);
   --card-text-shadow-color: var(--vader-saber-red);
   --card-text-decoration-color-primary: var(--vader-dark-red);
   --card-text-decoration-color-secondary: var(--vader-red);
